@@ -19,6 +19,7 @@ from project.models import (
 from utils.code_executor import CodeExecutor
 from utils.string_helper import (
     get_cpp_template,
+    get_java_template,
     get_react_code_content,
     create_react_body,
 )
@@ -68,6 +69,13 @@ class ProjectListCreateAPIView(generics.ListCreateAPIView):
             Directory.objects.create(
                 name='main.cpp',
                 content=get_cpp_template(),
+                project=project,
+            )
+
+        elif project_type == 'java':
+            Directory.objects.create(
+                name='Main.java',
+                content=get_java_templet(),
                 project=project,
             )
 

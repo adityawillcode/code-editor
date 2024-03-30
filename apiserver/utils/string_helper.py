@@ -42,6 +42,17 @@ def get_cpp_template() -> str:
                 return 0;
             } """
 
+def get_java_template() -> str:
+    """ Returns a Java template """
+    return """
+           public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world !!");
+    }
+}
+
+            """
+
 
 def get_react_code_content():
     return {
