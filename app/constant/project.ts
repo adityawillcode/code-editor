@@ -15,4 +15,8 @@ export const PROJECT_TYPES = [
     name: "CPP",
     value: "cpp",
   },
+  {
+    name: "Java",
+    value: "java",
+  },
 ];
