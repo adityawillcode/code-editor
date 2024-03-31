@@ -13,7 +13,7 @@ class CodeExecutor:
     This class is used to create a container and execute the code. 
     It assumes that the image is already built, otherwise it will 
     raise an exception.
-
+    
     Example:
         >>> code_executor = CodeExecutor()
         >>> code_executor.create_command('main.py', 'print("Hello World")')
